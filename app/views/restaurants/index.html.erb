@@ -1,0 +1,7 @@
+<div class="container mt-3">
+<div class="col-sm-8 offset-sm-2">
+<% @restaurants.each do |restaurant| %>
+<h2><%= link_to restaurant.name, restaurant_path(restaurant.id), class: "text-decoration-none"%></h2>
+<% end %>
+</div>
+</div>
